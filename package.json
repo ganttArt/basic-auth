@@ -1,28 +1,32 @@
 {
-  "name": "server",
+  "name": "basic-auth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "watch": "nodemon app.js",
-    "test-watch": "jest --watchAll",
-    "test": "jest"
+  "dependencies": {
+    "@code-fellows/supergoose": "^1.1.0",
+    "dotenv": "^8.2.0",
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "mongoose": "^5.10.15"
   },
-  "jest": {
-    "testEnvironment": "node"
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --forceExit",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganttArt/basic-auth.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@code-fellows/supergoose": "^1.1.0",
-    "base-64": "^1.0.0",
-    "bcrypt": "^5.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "jest": "^26.6.3",
-    "mongoose": "^5.10.15"
-  }
+  "bugs": {
+    "url": "https://github.com/ganttArt/basic-auth/issues"
+  },
+  "homepage": "https://github.com/ganttArt/basic-auth#readme"
 }
